@@ -1,0 +1,93 @@
+[
+  {
+    "prompt": "Gaz ga 30 ming pul tashla",
+    "expected": {
+      "intent": "pay",
+      "category": "utilities",
+      "subcategory": "gas",
+      "amount": 30000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Oyimga 500 ming so'm o'tkazib yubor",
+    "expected": {
+      "intent": "transfer",
+      "amount": 500000,
+      "currency": "UZS",
+      "target": "Oyim"
+    }
+  },
+  {
+    "prompt": "Telefonimga 10 ming sol",
+    "expected": {
+      "intent": "pay",
+      "category": "mobile",
+      "amount": 10000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Svetdan qarzdorlikni to'lash uchun 100000 so'm",
+    "expected": {
+      "intent": "pay",
+      "category": "utilities",
+      "subcategory": "electricity",
+      "amount": 100000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Internetga 50 ming to'la",
+    "expected": {
+      "intent": "pay",
+      "category": "internet",
+      "amount": 50000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Akamning kartasiga 1 million tashla",
+    "expected": {
+      "intent": "transfer",
+      "amount": 1000000,
+      "currency": "UZS",
+      "target": "Akamning kartasi"
+    }
+  },
+  {
+    "prompt": "Suvga 20 ming",
+    "expected": {
+      "intent": "pay",
+      "category": "utilities",
+      "subcategory": "water",
+      "amount": 20000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Balansni tekshirish",
+    "expected": {
+      "intent": "check_balance"
+    }
+  },
+  {
+    "prompt": "Uydagi wifi ga 150 ming to'lab yubor",
+    "expected": {
+      "intent": "pay",
+      "category": "internet",
+      "subcategory": "wifi",
+      "amount": 150000,
+      "currency": "UZS"
+    }
+  },
+  {
+    "prompt": "Besh yuz ming so'm qarzimni uzishim kerak",
+    "expected": {
+      "intent": "pay",
+      "category": "debt",
+      "amount": 500000,
+      "currency": "UZS"
+    }
+  }
+]
