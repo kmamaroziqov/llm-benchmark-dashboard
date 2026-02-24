@@ -50,8 +50,7 @@ agg_df = df.groupby('model').agg(
     avg_prompt_eval_time=('prompt_eval_time_sec', 'mean'),
     avg_eval_time=('eval_time_sec', 'mean'),
     model_memory_gb=('model_memory_gb', 'max'),
-    sys_vram_gb=('sys_vram_gb', 'max'),
-    sys_ram_gb=('sys_ram_gb', 'max')
+    sys_vram_gb=('sys_vram_gb', 'max')
 ).reset_index()
 
 # Convert accuracy to percentage
@@ -64,8 +63,7 @@ st.dataframe(agg_df.style.format({
     'avg_prompt_eval_time': '{:.2f}s',
     'avg_eval_time': '{:.2f}s',
     'model_memory_gb': '{:.2f} GB',
-    'sys_vram_gb': '{:.2f} GB',
-    'sys_ram_gb': '{:.2f} GB'
+    'sys_vram_gb': '{:.2f} GB'
 }))
 
 col1, col2 = st.columns(2)
